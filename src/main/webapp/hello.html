@@ -2,9 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello,HTML</title>
+<title>お問い合わせフォーム</title>
 </head>
 <body>
-こんにちはHTML！！！
+<form action="/example/testenq" method="post">
+	お名前：<input type="text" name="name"></input><br>
+	お問い合わせの種類；
+	<select name="qtype">
+		<option value="company">会社について</option>
+		<option value="product">製品について</option>
+		<option value="support">アフターサポートについて</option>
+	</select><br>
+	<textarea name="body"></textarea><br>
+	<input type="submit" value="送信">
+</form>
 </body>
 </html>
