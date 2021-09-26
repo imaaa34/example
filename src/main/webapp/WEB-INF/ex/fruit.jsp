@@ -6,7 +6,7 @@
 <!-- セッションスコープ -->
 <%-- <% Fruit fruit = (Fruit) session.getAttribute("fruit"); %> --%>
 <!-- アプリケーションスコープ -->
-<% Fruit fruit = (Fruit) application.getAttribute("fruit"); %>
+<%-- <% Fruit fruit = (Fruit) application.getAttribute("fruit"); %> --%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +14,8 @@
 <title>Fruit's pricing</title>
 </head>
 <body>
-<p><%= fruit.getName() %>の値段は<%= fruit.getPrice() %>円です。</p>
+<%-- <p><%= fruit.getName() %>の値段は<%= fruit.getPrice() %>円です。</p> --%>
+<!-- アプリケーションから取得することを保証するためにapplicationScopeがいる -->
+<p>${applicationScope.fruit.name}の値段は${applicationScope.fruit.price}円です。</p>
 </body>
 </html>
