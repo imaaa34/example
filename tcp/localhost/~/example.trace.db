@@ -1,0 +1,4 @@
+2021-09-27 01:11:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: テーブル "EMPLOYEE" が見つかりません
+Table "EMPLOYEE" not found; SQL statement:
+SELECT ID, NAME, AGE FROM EMPLOYEE [42102-199]
