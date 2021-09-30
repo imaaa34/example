@@ -5,11 +5,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import model.Account;
 import model.Login;
 
 public class AccountDAO {
-	private final String JDBC_URL = "jdbc:h2:tcp//localhost/~/sukkiriShop";
+	private final String JDBC_URL = "jdbc:h2:tcp://localhost/~/sukkiriShop";
 	private final String DB_USER = "sa";
 	private final String DB_PASS = "";
 	
